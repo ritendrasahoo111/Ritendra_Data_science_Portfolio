@@ -1,0 +1,482 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+<title>Ritendra Sahoo | Data Science &amp; Data Analytics Portfolio</title>
+<meta name="description" content="Ritendra Sahoo — Data Analyst & Data Science professional skilled in Python, SQL, Machine Learning, and Data Visualization. Explore projects, skills, and experience." />
+<meta name="keywords" content="Ritendra Sahoo, Data Scientist, Data Analyst, Machine Learning Engineer, Python Developer, Data Science Portfolio, SQL, Pandas, Scikit-learn" />
+<meta name="author" content="Ritendra Sahoo" />
+
+<meta property="og:title" content="Ritendra Sahoo | Data Science & Data Analytics Portfolio" />
+<meta property="og:description" content="Data Analyst and Data Science professional turning raw data into decision-ready insights with Python, SQL, and Machine Learning." />
+<meta property="og:type" content="website" />
+<meta property="og:image" content="assets/images/profile.svg" />
+
+<link rel="icon" href="assets/images/favicon.svg" type="image/svg+xml" />
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700;800&family=Fira+Code:wght@400;500&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css" />
+<link rel="stylesheet" href="style.css" />
+</head>
+<body>
+
+<!-- Particle Background -->
+<canvas id="particles"></canvas>
+
+<!-- Loading Screen -->
+<div id="loader">
+  <div class="loader-inner">
+    <span class="loader-text">RS</span>
+    <div class="loader-bar"></div>
+  </div>
+</div>
+
+<!-- Navbar -->
+<nav id="navbar">
+  <div class="nav-container">
+    <a href="#home" class="logo">Ritendra<span>Sahoo</span></a>
+    <ul class="nav-links" id="navLinks">
+      <li><a href="#home" class="active">Home</a></li>
+      <li><a href="#about">About</a></li>
+      <li><a href="#experience">Experience</a></li>
+      <li><a href="#skills">Skills</a></li>
+      <li><a href="#certificates">Certifications</a></li>
+      <li><a href="#projects">Projects</a></li>
+      <li><a href="#contact">Contact</a></li>
+    </ul>
+    <div class="nav-actions">
+      <button id="themeToggle" aria-label="Toggle dark mode"><i class="fa-solid fa-moon"></i></button>
+      <button class="hamburger" id="hamburger" type="button" aria-label="Toggle navigation" aria-expanded="false" aria-controls="navLinks">
+        <span></span><span></span><span></span>
+      </button>
+    </div>
+  </div>
+</nav>
+
+<!-- Hero Section -->
+<section id="home" class="hero">
+  <div class="hero-container">
+    <div class="hero-text">
+      <p class="hero-greeting">Hello, I'm</p>
+      <h1 class="hero-name">Ritendra Sahoo</h1>
+      <h2 class="hero-role">And I'm a <span id="typed-text" class="typed-text"></span><span class="cursor">|</span></h2>
+      <p class="hero-desc">
+        Passionate about transforming raw data into clear, decision-ready insights using Python,
+        Machine Learning, and Statistical Analysis. I turn complex datasets into stories teams can act on.
+      </p>
+      <div class="hero-buttons">
+        <a href="assets/resume/Ritendra_Sahoo_Updated_Resume_111.pdf" class="btn btn-primary" download>
+          <i class="fa-solid fa-download"></i> Resume
+        </a>
+        <a href="https://github.com/ritendrasahoo111" target="_blank" rel="noopener noreferrer" class="btn btn-outline">
+          <i class="fa-brands fa-github"></i> GitHub
+        </a>
+        <a href="https://www.linkedin.com/in/ritendra-sahoo" target="_blank" rel="noopener noreferrer" class="btn btn-outline">
+          <i class="fa-brands fa-linkedin"></i> LinkedIn
+        </a>
+      </div>
+      <div class="hero-cta">
+        <a href="#contact" class="cta-link">Get in Touch <i class="fa-solid fa-arrow-right"></i></a>
+        <a href="#projects" class="cta-link">View Projects <i class="fa-solid fa-arrow-right"></i></a>
+      </div>
+    </div>
+    <div class="hero-image">
+      <div class="image-glow"></div>
+      <img src="image.png.jpg" alt="Ritendra Sahoo portrait" loading="eager" onerror="this.onerror=null;this.src='assets/images/profile.jpg';" />
+    </div>
+  </div>
+  <div class="scroll-indicator"><i class="fa-solid fa-chevron-down"></i></div>
+</section>
+
+<!-- Stats Section -->
+<section class="stats">
+  <div class="stats-container">
+    <div class="stat-card">
+      <h3 class="counter" data-target="4">0</h3>
+      <p>Projects Completed</p>
+    </div>
+    <div class="stat-card">
+      <h3 class="counter" data-target="2">0</h3>
+      <p>Internships</p>
+    </div>
+    <div class="stat-card">
+      <h3 class="counter" data-target="3">0</h3>
+      <p>Years of Learning</p>
+    </div>
+    <div class="stat-card">
+      <h3 class="counter" data-target="7">0</h3>
+      <p>Certifications</p>
+    </div>
+    <div class="stat-card">
+      <h3 class="counter" data-target="150">0</h3>
+      <p>GitHub Contributions</p>
+    </div>
+  </div>
+</section>
+
+<!-- About Section -->
+<section id="about" class="section">
+  <div class="section-header">
+    <span class="section-tag">Get To Know</span>
+    <h2 class="section-title">About Me</h2>
+  </div>
+  <div class="about-content">
+    <p>
+      I'm a Data Analyst and Data Science professional with hands-on experience in Python, SQL, and
+      cloud fundamentals. I specialize in collecting, cleaning, and transforming raw datasets into clear,
+      decision-ready insights — from exploratory data analysis to building predictive machine learning
+      models. I'm comfortable working with large datasets and enjoy turning complex data into
+      straightforward dashboards and reports that teams actually use. I'm eager to take on analytical
+      challenges where curiosity and strong technical fundamentals can make a real difference.
+    </p>
+  </div>
+</section>
+
+<!-- Experience Section -->
+<section id="experience" class="section">
+  <div class="section-header">
+    <span class="section-tag">My Journey</span>
+    <h2 class="section-title">Experience</h2>
+  </div>
+  <div class="timeline">
+    <div class="timeline-item">
+      <div class="timeline-dot"></div>
+      <div class="timeline-content glass-card">
+        <h3>Technical Support Executive <span class="timeline-company">- Netcarrots.com</span></h3>
+        <span class="timeline-date">Nov 2025 - Present</span>
+        <ul>
+          <li>Built and maintained daily MIS reports, consistently achieving 99% accuracy in data entry and ticket logging.</li>
+          <li>Designed Excel dashboards to monitor team KPIs, giving leads instant visibility into daily performance metrics.</li>
+          <li>Studied ticket resolution patterns and proposed process changes that cut average handling time by 15%.</li>
+          <li>Wrote Python and shell scripts to automate repetitive reporting tasks, reclaiming 5+ hours of manual work weekly.</li>
+        </ul>
+      </div>
+    </div>
+    <div class="timeline-item">
+      <div class="timeline-dot"></div>
+      <div class="timeline-content glass-card">
+        <h3>Data Analyst Intern <span class="timeline-company">- CloudHeroWithAI</span></h3>
+        <span class="timeline-date">May 2025 - Nov 2025</span>
+        <ul>
+          <li>Produced regular reports covering infrastructure health, uptime, and deployment activity to inform decisions.</li>
+          <li>Created Excel-based dashboards using Pivot Tables, charts, and VLOOKUP functions to summarise metrics.</li>
+          <li>Conducted exploratory data analysis on platform datasets, surfacing trends for product and infra planning.</li>
+          <li>Partnered with engineers and product teams to translate raw data into operational recommendations.</li>
+        </ul>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- Skills Section -->
+<section id="skills" class="section">
+  <div class="section-header">
+    <span class="section-tag">What I Know</span>
+    <h2 class="section-title">Skills</h2>
+  </div>
+  <div class="skills-grid">
+    <div class="skill-card glass-card" data-tip="Python for analytics, automation, and ML workflows.">
+      <img src="https://www.python.org/static/community_logos/python-logo-generic.svg" alt="Python" loading="eager" onerror="this.src='assets/icons/skills/python.svg'" />
+      <h3>Python</h3>
+      <p>Pandas, NumPy, Scikit-learn, and automation scripting for data workflows.</p>
+      <div class="progress-ring" data-percent="90"></div>
+    </div>
+    <div class="skill-card glass-card" data-tip="SQL for data extraction, joins, aggregations, and relational analysis.">
+      <img src="https://upload.wikimedia.org/wikipedia/commons/8/87/Sql_data_base_with_logo.png" alt="SQL" loading="eager" onerror="this.src='assets/icons/skills/sql.svg'" />
+      <h3>SQL</h3>
+      <p>MySQL queries, database design, joins, and aggregations for analysis.</p>
+      <div class="progress-ring" data-percent="85"></div>
+    </div>
+    <div class="skill-card glass-card" data-tip="Pandas and NumPy for fast data wrangling and numerical analysis.">
+      <img src="https://upload.wikimedia.org/wikipedia/commons/2/22/Pandas_mark.svg" alt="Pandas" loading="eager" onerror="this.src='assets/icons/skills/pandas.svg'" />
+      <h3>Pandas &amp; NumPy</h3>
+      <p>Data wrangling, cleaning, and transformation at scale.</p>
+      <div class="progress-ring" data-percent="90"></div>
+    </div>
+    <div class="skill-card glass-card" data-tip="Visualization with Matplotlib, Seaborn, and Plotly for clear insights.">
+      <img src="https://upload.wikimedia.org/wikipedia/commons/0/01/Created_with_Matplotlib-logo.svg" alt="Data Visualization" loading="eager" onerror="this.src='assets/icons/skills/visualization.svg'" />
+      <h3>Data Visualization</h3>
+      <p>Matplotlib, Seaborn, Plotly, and Excel dashboards &amp; charts.</p>
+      <div class="progress-ring" data-percent="88"></div>
+    </div>
+    <div class="skill-card glass-card" data-tip="Machine learning for regression, classification, clustering, and forecasting.">
+      <img src="https://upload.wikimedia.org/wikipedia/commons/0/05/Scikit_learn_logo_small.svg" alt="Machine Learning" loading="eager" onerror="this.src='assets/icons/skills/ml.svg'" />
+      <h3>Machine Learning</h3>
+      <p>Regression, Classification, Clustering, Feature Engineering with Scikit-learn.</p>
+      <div class="progress-ring" data-percent="82"></div>
+    </div>
+    <div class="skill-card glass-card" data-tip="Deep learning with neural networks for image, text, and predictive modelling tasks.">
+      <img src="https://upload.wikimedia.org/wikipedia/commons/2/2d/Tensorflow_logo.svg" alt="Deep Learning" loading="eager" onerror="this.src='assets/icons/skills/ml.svg'" />
+      <h3>Deep Learning</h3>
+      <p>Neural networks, TensorFlow basics, model training, and evaluation workflows.</p>
+      <div class="progress-ring" data-percent="78"></div>
+    </div>
+    <div class="skill-card glass-card" data-tip="Generative AI for prompt engineering, AI-assisted workflows, and practical automation.">
+      <img src="https://upload.wikimedia.org/wikipedia/commons/4/4d/OpenAI_Logo.svg" alt="Generative AI" loading="eager" onerror="this.src='assets/icons/skills/ml.svg'" />
+      <h3>Generative AI</h3>
+      <p>Prompt engineering, LLM tools, content generation, and AI-powered automation.</p>
+      <div class="progress-ring" data-percent="80"></div>
+    </div>
+    <div class="skill-card glass-card" data-tip="Time-series analysis for forecasting, seasonality, and trend detection.">
+      <img src="https://upload.wikimedia.org/wikipedia/commons/9/94/Statsmodels_logo_%28light%29.png" alt="Time Series Analysis" loading="eager" onerror="this.src='assets/icons/skills/timeseries.svg'" />
+      <h3>Time Series Analysis</h3>
+      <p>Statsmodels, decomposition, and ARIMA forecasting.</p>
+      <div class="progress-ring" data-percent="80"></div>
+    </div>
+    <div class="skill-card glass-card" data-tip="Power BI for interactive dashboards, KPIs, and executive reporting.">
+      <img src="https://upload.wikimedia.org/wikipedia/commons/c/cf/Microsoft_Power_BI_Logo.svg" alt="Power BI" loading="eager" onerror="this.src='assets/icons/skills/powerbi.svg'" />
+      <h3>Power BI</h3>
+      <p>Interactive dashboards, DAX measures, and business reporting.</p>
+      <div class="progress-ring" data-percent="87"></div>
+    </div>
+    <div class="skill-card glass-card" data-tip="AWS fundamentals for cloud storage, compute, and deployment basics.">
+      <img src="https://upload.wikimedia.org/wikipedia/commons/9/93/Amazon_Web_Services_Logo.svg" alt="AWS" loading="eager" onerror="this.src='assets/icons/skills/aws.svg'" />
+      <h3>AWS</h3>
+      <p>Cloud fundamentals — EC2, S3, IAM basics.</p>
+      <div class="progress-ring" data-percent="70"></div>
+    </div>
+    <div class="skill-card glass-card" data-tip="Google Cloud for data storage, compute, and cloud fundamentals.">
+      <img src="assets/icons/skills/gcp.svg" alt="Google Cloud" loading="eager" />
+      <h3>Google Cloud</h3>
+      <p>GCP fundamentals for data storage and compute.</p>
+      <div class="progress-ring" data-percent="68"></div>
+    </div>
+    <div class="skill-card glass-card" data-tip="Linux and shell scripting for automation and system workflows.">
+      <img src="https://upload.wikimedia.org/wikipedia/commons/3/35/Tux.svg" alt="Linux" loading="eager" onerror="this.src='assets/icons/skills/linux.svg'" />
+      <h3>Linux</h3>
+      <p>Shell scripting and system fundamentals.</p>
+      <div class="progress-ring" data-percent="75"></div>
+    </div>
+    <div class="skill-card glass-card" data-tip="Git and GitHub for version control and collaborative development.">
+      <img src="https://github.githubassets.com/images/modules/logos_page/GitHub-Mark.png" alt="GitHub" loading="eager" onerror="this.src='assets/icons/skills/github.svg'" />
+      <h3>Git &amp; GitHub</h3>
+      <p>Version control, collaboration, and project hosting.</p>
+      <div class="progress-ring" data-percent="85"></div>
+    </div>
+    <div class="skill-card glass-card" data-tip="VS Code and Colab for rapid analysis and collaborative experimentation.">
+      <img src="https://upload.wikimedia.org/wikipedia/commons/9/9d/Visual_Studio_Code_1.35_icon.svg" alt="VS Code" loading="eager" onerror="this.src='assets/icons/skills/vscode.svg'" />
+      <h3>VS Code &amp; Colab</h3>
+      <p>Daily development environments for analysis and modelling.</p>
+      <div class="progress-ring" data-percent="90"></div>
+    </div>
+    <div class="skill-card glass-card" data-tip="Excel for dashboards, pivot tables, and business reporting.">
+      <img src="https://upload.wikimedia.org/wikipedia/commons/1/1e/Ms-excel.svg" alt="Excel" loading="eager" onerror="this.src='assets/icons/skills/excel.svg'" />
+      <h3>Excel</h3>
+      <p>Pivot tables, VLOOKUP, dashboards, and MIS reporting.</p>
+      <div class="progress-ring" data-percent="88"></div>
+    </div>
+  </div>
+</section>
+
+<!-- Certifications Section -->
+<section id="certificates" class="section">
+  <div class="section-header">
+    <span class="section-tag">Verified Learning</span>
+    <h2 class="section-title">Certifications</h2>
+  </div>
+  <div class="cert-grid">
+    <a href="assets/certificates/aws-cloud-practitioner.png" target="_blank" rel="noopener noreferrer" class="cert-card glass-card" data-tip="AWS Cloud Practitioner certificate for fundamental cloud knowledge.">
+      <img src="assets/certificates/aws-cloud-practitioner.png" alt="AWS Cloud Practitioner" loading="eager" onerror="this.src='https://via.placeholder.com/300x220/1a1a2e/00d9ff?text=AWS+Certificate'" />
+      <h3>AWS Cloud Practitioner</h3>
+      <p>Amazon Web Services · 2025</p>
+    </a>
+    <a href="assets/certificates/cyber-security-privacy.jpg" target="_blank" rel="noopener noreferrer" class="cert-card glass-card" data-tip="Cybersecurity and privacy certification covering secure practices and risk awareness.">
+      <img src="assets/certificates/cyber-security-privacy.jpg" alt="Cyber Security & Privacy" loading="eager" onerror="this.src='https://via.placeholder.com/300x220/1a1a2e/00d9ff?text=Cyber+Security'" />
+      <h3>Cyber Security &amp; Privacy</h3>
+      <p>Security and Privacy Management</p>
+    </a>
+    <a href="assets/certificates/industry-4-iot.jpg" target="_blank" rel="noopener noreferrer" class="cert-card glass-card" data-tip="Industry 4.0 and IIoT certification for connected industrial systems.">
+      <img src="assets/certificates/industry-4-iot.jpg" alt="Industry 4.0 & IIoT" loading="eager" onerror="this.src='https://via.placeholder.com/300x220/1a1a2e/00d9ff?text=IIoT+Certificate'" />
+      <h3>Industry 4.0 &amp; IIoT</h3>
+      <p>Introduction to Industrial IoT</p>
+    </a>
+    <a href="assets/certificates/management-information-system.jpg" target="_blank" rel="noopener noreferrer" class="cert-card glass-card" data-tip="Management information systems certification focused on business data and decision support.">
+      <img src="assets/certificates/management-information-system.jpg" alt="Management Information System" loading="eager" onerror="this.src='https://via.placeholder.com/300x220/1a1a2e/00d9ff?text=MIS+Certificate'" />
+      <h3>Management Information System</h3>
+      <p>Information Systems Management</p>
+    </a>
+    <a href="assets/certificates/power-bi.jpg" target="_blank" rel="noopener noreferrer" class="cert-card glass-card" data-tip="Power BI certification for business intelligence and dashboard design.">
+      <img src="assets/certificates/power-bi.jpg" alt="Power BI" loading="eager" onerror="this.src='https://via.placeholder.com/300x220/1a1a2e/00d9ff?text=Power+BI'" />
+      <h3>Power BI</h3>
+      <p>Business Intelligence and Dashboarding</p>
+    </a>
+    <a href="assets/certificates/generative-ai-devops.png" target="_blank" rel="noopener noreferrer" class="cert-card glass-card" data-tip="Generative AI for DevOps certification focused on automation and delivery workflows.">
+      <img src="assets/certificates/generative-ai-devops.png" alt="Generative AI for DevOps" loading="eager" onerror="this.src='https://via.placeholder.com/300x220/1a1a2e/00d9ff?text=AI+DevOps'" />
+      <h3>Generative AI for DevOps</h3>
+      <p>Automation and AI-driven Software Delivery</p>
+    </a>
+    <a href="assets/certificates/hack2skill.jpg" target="_blank" rel="noopener noreferrer" class="cert-card glass-card" data-tip="Hack2Skill certification showcasing practical cloud and automation learning.">
+      <img src="assets/certificates/hack2skill.jpg" alt="Hack2Skill" loading="eager" onerror="this.src='https://via.placeholder.com/300x220/1a1a2e/00d9ff?text=Hack2Skill'" />
+      <h3>Hack2Skill Certification</h3>
+      <p>Professional Development in Cloud and Automation</p>
+    </a>
+    <a href="assets/certificates/cloud-technical-series.pdf" target="_blank" rel="noopener noreferrer" class="cert-card glass-card" data-tip="Cloud Technical Series certification covering advanced cloud architecture and technologies.">
+      <img src="assets/certificates/cloud-technical-series-preview.jpg" alt="Cloud Technical Series" loading="eager" onerror="this.src='https://via.placeholder.com/300x220/1a1a2e/00d9ff?text=Cloud+Technical+Series'" />
+      <h3>Cloud Technical Series</h3>
+      <p>Advanced Cloud Architecture and Technologies</p>
+    </a>
+  </div>
+</section>
+
+<!-- Projects Section -->
+<section id="projects" class="section">
+  <div class="section-header">
+    <span class="section-tag">My Work</span>
+    <h2 class="section-title">Projects</h2>
+  </div>
+  <div class="projects-grid">
+
+    <div class="project-card glass-card">
+      <div class="project-image">
+        <img src="assets/images/project-netflix.jpg" alt="Netflix Content Analysis" loading="lazy" onerror="this.src='https://via.placeholder.com/500x300/1a1a2e/e50914?text=Netflix+Content+Analysis'" />
+      </div>
+      <div class="project-body">
+        <h3>🎬 Netflix Content Analysis</h3>
+        <p>Analysed 8,000+ Netflix titles to explore how content evolved across genres, countries, and release years using group-by aggregations and time-based breakdowns.</p>
+        <div class="tech-tags">
+          <span>Python</span><span>Pandas</span><span>Matplotlib</span><span>Seaborn</span>
+        </div>
+        <p class="key-result"><i class="fa-solid fa-circle-check"></i> US &amp; India dominate content volume; drama and international titles grew fastest since 2016.</p>
+        <div class="project-links">
+          <a href="https://github.com/ritendrasahoo111" target="_blank" rel="noopener noreferrer" class="btn btn-sm"><i class="fa-brands fa-github"></i> GitHub</a>
+          <a href="#" class="btn btn-sm btn-outline"><i class="fa-solid fa-arrow-up-right-from-square"></i> Live Demo</a>
+        </div>
+      </div>
+    </div>
+
+    <div class="project-card glass-card">
+      <div class="project-image">
+        <img src="assets/images/project-covid.jpg" alt="COVID-19 Global Data Analysis" loading="lazy" onerror="this.src='https://via.placeholder.com/500x300/1a1a2e/00d9ff?text=COVID-19+Global+Analysis'" />
+      </div>
+      <div class="project-body">
+        <h3>🦠 COVID-19 Global Data Analysis</h3>
+        <p>Explored a 200+ country dataset tracking case counts, fatality rates, and vaccine rollout pace. Built interactive Plotly charts and SQL queries to compare regions.</p>
+        <div class="tech-tags">
+          <span>Python</span><span>Pandas</span><span>Plotly</span><span>SQL</span>
+        </div>
+        <p class="key-result"><i class="fa-solid fa-circle-check"></i> Early-vaccinating countries showed measurably lower death rates during Delta &amp; Omicron waves.</p>
+        <div class="project-links">
+          <a href="https://github.com/ritendrasahoo111" target="_blank" rel="noopener noreferrer" class="btn btn-sm"><i class="fa-brands fa-github"></i> GitHub</a>
+          <a href="#" class="btn btn-sm btn-outline"><i class="fa-solid fa-arrow-up-right-from-square"></i> Live Demo</a>
+        </div>
+      </div>
+    </div>
+
+    <div class="project-card glass-card">
+      <div class="project-image">
+        <img src="assets/images/project-walmart.jpg" alt="Walmart Sales Time Series Forecasting" loading="lazy" onerror="this.src='https://via.placeholder.com/500x300/1a1a2e/0071ce?text=Walmart+Sales+Forecasting'" />
+      </div>
+      <div class="project-body">
+        <h3>📈 Walmart Sales Time Series Forecasting</h3>
+        <p>Analysed historical weekly sales across 45 stores, applied time series decomposition, and built an ARIMA model to forecast future weekly sales.</p>
+        <div class="tech-tags">
+          <span>Python</span><span>Pandas</span><span>Statsmodels</span><span>Matplotlib</span>
+        </div>
+        <p class="key-result"><i class="fa-solid fa-circle-check"></i> Achieved MAPE under 8%; holiday weeks drive 15–20% above-average sales.</p>
+        <div class="project-links">
+          <a href="https://github.com/ritendrasahoo111" target="_blank" rel="noopener noreferrer" class="btn btn-sm"><i class="fa-brands fa-github"></i> GitHub</a>
+          <a href="#" class="btn btn-sm btn-outline"><i class="fa-solid fa-arrow-up-right-from-square"></i> Live Demo</a>
+        </div>
+      </div>
+    </div>
+
+    <div class="project-card glass-card">
+      <div class="project-image">
+        <img src="assets/images/project-churn.jpg" alt="Customer Churn Prediction" loading="lazy" onerror="this.src='https://via.placeholder.com/500x300/1a1a2e/8a2be2?text=Customer+Churn+Prediction'" />
+      </div>
+      <div class="project-body">
+        <h3>📊 Customer Churn Prediction</h3>
+        <p>Built a binary classification model to predict customer cancellations, handling missing values, encoding, and class imbalance before comparing models.</p>
+        <div class="tech-tags">
+          <span>Python</span><span>Scikit-learn</span><span>Pandas</span>
+        </div>
+        <p class="key-result"><i class="fa-solid fa-circle-check"></i> Tuned Random Forest reached ~84% accuracy, ROC-AUC of 0.88.</p>
+        <div class="project-links">
+          <a href="https://github.com/ritendrasahoo111" target="_blank" rel="noopener noreferrer" class="btn btn-sm"><i class="fa-brands fa-github"></i> GitHub</a>
+          <a href="#" class="btn btn-sm btn-outline"><i class="fa-solid fa-arrow-up-right-from-square"></i> Live Demo</a>
+        </div>
+      </div>
+    </div>
+
+  </div>
+</section>
+
+<!-- Contact Section -->
+<section id="contact" class="section">
+  <div class="section-header">
+    <span class="section-tag">Let's Talk</span>
+    <h2 class="section-title">Get in Touch</h2>
+  </div>
+  <div class="contact-content">
+    <div class="contact-info">
+      <div class="contact-item glass-card">
+        <i class="fa-solid fa-envelope"></i>
+        <div>
+          <h4>Primary Email</h4>
+          <a href="mailto:sahooritendra302@gmail.com">sahooritendra302@gmail.com</a>
+        </div>
+      </div>
+      <div class="contact-item glass-card">
+        <i class="fa-solid fa-phone"></i>
+        <div>
+          <h4>Phone</h4>
+          <a href="tel:+917849082434">+91 7849082434</a>
+        </div>
+      </div>
+      <div class="contact-item glass-card">
+        <i class="fa-solid fa-location-dot"></i>
+        <div>
+          <h4>Location</h4>
+          <span>Bengaluru, India</span>
+        </div>
+      </div>
+      <div class="contact-item glass-card">
+        <i class="fa-brands fa-linkedin"></i>
+        <div>
+          <h4>LinkedIn</h4>
+          <a href="https://www.linkedin.com/in/ritendra-sahoo" target="_blank" rel="noopener noreferrer">linkedin.com/in/ritendra-sahoo</a>
+        </div>
+      </div>
+      <div class="contact-item glass-card">
+        <i class="fa-brands fa-github"></i>
+        <div>
+          <h4>GitHub</h4>
+          <a href="https://github.com/ritendrasahoo111" target="_blank" rel="noopener noreferrer">github.com/ritendrasahoo111</a>
+        </div>
+      </div>
+    </div>
+    <form class="contact-form glass-card" id="contactForm" action="https://formsubmit.co/sahooritendra302@gmail.com" method="POST">
+      <input type="hidden" name="_template" value="table" />
+      <input type="hidden" name="_subject" value="New portfolio message" />
+      <input type="hidden" name="_next" value="http://127.0.0.1:5500/#contact" />
+      <div class="form-row">
+        <input type="text" name="name" placeholder="Your Name" required />
+        <input type="email" name="email" placeholder="Your Email" required />
+      </div>
+      <input type="text" name="subject" placeholder="Subject" required />
+      <textarea name="message" rows="5" placeholder="Your Message" required></textarea>
+      <button type="submit" class="btn btn-primary">Send Message</button>
+      <p class="form-status" id="formStatus"></p>
+    </form>
+  </div>
+</section>
+
+<!-- Footer -->
+<footer>
+  <div class="footer-container">
+    <p>&copy; <span id="year"></span> Ritendra Sahoo. All rights reserved.</p>
+    <div class="footer-socials">
+      <a href="https://github.com/ritendrasahoo111" target="_blank" rel="noopener noreferrer"><i class="fa-brands fa-github"></i></a>
+      <a href="https://www.linkedin.com/in/ritendra-sahoo" target="_blank" rel="noopener noreferrer"><i class="fa-brands fa-linkedin"></i></a>
+      <a href="mailto:sahooritendra302@gmail.com"><i class="fa-solid fa-envelope"></i></a>
+    </div>
+  </div>
+</footer>
+
+<a href="#home" class="back-to-top" id="backToTop"><i class="fa-solid fa-arrow-up"></i></a>
+
+<script src="https://cdn.jsdelivr.net/npm/@emailjs/browser@4/dist/email.min.js"></script>
+<script src="script.js"></script>
+</body>
+</html>

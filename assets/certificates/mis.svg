@@ -1,0 +1,9 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 600 400">
+  <rect width="600" height="400" rx="24" fill="#0f172a"/>
+  <rect x="48" y="48" width="504" height="304" rx="20" fill="#111827" stroke="#8B5CF6" stroke-width="4"/>
+  <rect x="160" y="120" width="280" height="150" rx="22" fill="#8B5CF6"/>
+  <rect x="188" y="150" width="80" height="86" rx="10" fill="#fff" opacity="0.95"/>
+  <rect x="286" y="150" width="126" height="18" rx="8" fill="#fff" opacity="0.95"/>
+  <rect x="286" y="182" width="100" height="16" rx="8" fill="#fff" opacity="0.8"/>
+  <text x="300" y="300" font-size="24" font-family="Poppins, Arial, sans-serif" fill="#F8FAFC" text-anchor="middle">Management Information System</text>
+</svg>

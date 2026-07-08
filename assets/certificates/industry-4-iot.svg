@@ -1,0 +1,8 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 600 400">
+  <rect width="600" height="400" rx="24" fill="#0f172a"/>
+  <rect x="48" y="48" width="504" height="304" rx="20" fill="#111827" stroke="#F59E0B" stroke-width="4"/>
+  <rect x="140" y="120" width="320" height="120" rx="20" fill="#F59E0B"/>
+  <rect x="180" y="150" width="240" height="24" rx="8" fill="#fff" opacity="0.95"/>
+  <rect x="180" y="192" width="180" height="16" rx="8" fill="#fff" opacity="0.8"/>
+  <text x="300" y="300" font-size="24" font-family="Poppins, Arial, sans-serif" fill="#F8FAFC" text-anchor="middle">Industry 4.0 &amp; IIoT</text>
+</svg>

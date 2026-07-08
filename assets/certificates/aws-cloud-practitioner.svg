@@ -1,0 +1,7 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 600 400">
+  <rect width="600" height="400" rx="24" fill="#0f172a"/>
+  <rect x="48" y="48" width="504" height="304" rx="20" fill="#111827" stroke="#FF9900" stroke-width="4"/>
+  <path d="M300 120l88 50v60l-88 50-88-50v-60l88-50z" fill="#FF9900"/>
+  <path d="M300 145l54 31v48l-54 31-54-31v-48l54-31z" fill="#fff" opacity="0.92"/>
+  <text x="300" y="240" font-size="28" font-family="Poppins, Arial, sans-serif" fill="#F8FAFC" text-anchor="middle">AWS Cloud Practitioner</text>
+</svg>
